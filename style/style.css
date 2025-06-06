@@ -21,6 +21,10 @@ body {
   color: #02a28f;
 }
 
+.data {
+  color: #616161;
+}
+
 header {
   height: 70px;
   background-color: #02a28f;
@@ -28,8 +32,15 @@ header {
   align-items: center;
 }
 
-.NomeSite {
-  width: 268px;
+.NomeSite p {
+  font-size: 36px;
+  font-weight: 800;
+  width: 400px;
+}
+
+header,
+footer {
+  border-radius: 0px;
 }
 
 header,
@@ -46,10 +57,9 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
-  align-items: start;
 }
 
-main .principal {
+.principal {
   flex-direction: column;
   width: 744px;
   gap: 20px;
@@ -73,14 +83,22 @@ main .principal {
 }
 
 .barra {
+  justify-content: space-between;
   padding: 16px 25px;
   background-color: #02a28f;
   box-shadow: 0 7px 2px -2px rgb(98, 98, 98);
 }
 
-.barra p {
+.ptr {
   font-size: 20px;
   font-weight: 700;
+}
+
+.ver-todos {
+  font-weight: 300;
+  font-size: 14px;
+  border-bottom: 1px solid;
+  border-radius: 0px;
 }
 
 .grid-container {
@@ -91,6 +109,7 @@ main .principal {
 }
 
 .card {
+  height: 420px;
   background-color: white;
   width: 360px;
   box-shadow: 0 7px 2px -2px rgb(98, 98, 98);
@@ -102,8 +121,8 @@ main .principal {
 }
 
 .caixa-texto {
-  height: 175px;
-  padding: 10px;
+  height: 220px;
+  padding: 5px 15px;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -183,4 +202,67 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer p {
+  width: 500px;
+}
+
+@media (min-width: 517px) and (max-width: 745px) {
+  .principal {
+    width: 520px;
+  }
+  .card {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .caixa-texto {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 515px) {
+  header {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  .NomeSite p {
+    font-weight: 500;
+    font-size: 24px;
+    width: 180px;
+    height: 29px;
+  }
+  main {
+    justify-content: center;
+  }
+  .opiniao {
+    align-self: center;
+    width: 300px;
+  }
+
+  .principal {
+    width: fit-content;
+    justify-content: center;
+  }
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+
+  footer {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  footer p {
+    font-weight: 400;
+    font-size: 14px;
+    width: 185px;
+  }
 }
