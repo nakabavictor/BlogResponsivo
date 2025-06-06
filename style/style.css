@@ -2,6 +2,23 @@
 * {
   font-family: "Montserrat";
   margin: 0;
+  border-radius: 10px;
+}
+
+body {
+  background-color: gray;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.by {
+  font-weight: bold;
+}
+
+.tema {
+  color: #02a28f;
 }
 
 header {
@@ -22,11 +39,93 @@ footer {
 }
 
 main {
+  justify-content: center;
+  padding: 16px 0;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  gap: 20px;
+  align-items: start;
+}
+
+main .principal {
+  flex-direction: column;
+  width: 744px;
+  gap: 20px;
+}
+
+.opiniao {
+  align-items: end;
+  padding: 24px;
+  height: 396px;
+  background-image: url("../assets/principal.jpg");
+  background-size: cover;
+}
+
+.tema-hero p {
+  font-size: 16px;
+}
+
+.posts-recentes {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.barra {
+  padding: 16px 25px;
+  background-color: #02a28f;
+}
+
+.barra p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
-  align-items: center;
+  gap: 10px;
+}
+
+.card {
+  background-color: white;
+  width: 360px;
+}
+
+.banner img {
+  width: 100%;
+  height: 191px;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.aside {
+  flex-direction: column;
+}
+
+.barrinha-popular {
+  font-size: 20px;
+}
+
+.side-cards {
+  flex-direction: column;
+}
+
+.titulo-popular {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.texto-popular {
+  font-size: 12px;
+}
+
+.side-card img {
+  width: 135px;
+  height: 70px;
 }
 
 footer {
