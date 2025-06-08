@@ -204,10 +204,6 @@ footer {
   align-items: center;
 }
 
-footer p {
-  width: 500px;
-}
-
 @media (min-width: 517px) and (max-width: 745px) {
   .principal {
     width: 520px;
